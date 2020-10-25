@@ -16,7 +16,7 @@ input.onPinPressed(TouchPin.P0, function () {
     short = 0
     medium = 0
     tall = 0
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 50; index++) {
         height = randint(100, 200)
         basic.showNumber(height)
         if (height <= 150) {
@@ -50,10 +50,10 @@ input.onButtonPressed(Button.B, function () {
         }
     }
     basic.showString("Total Odd:")
-    basic.showNumber(cont_even)
+    basic.showNumber(cont_odd)
     basic.clearScreen()
     basic.showString("Total Even:")
-    basic.showNumber(cont_odd)
+    basic.showNumber(cont_even)
     basic.clearScreen()
 })
 input.onPinPressed(TouchPin.P1, function () {
